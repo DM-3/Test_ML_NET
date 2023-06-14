@@ -9,11 +9,13 @@ class Program
         public float Size { get; set; }
         public float Price { get; set; }
     }
+
     public class Prediction
     {
         [ColumnName("Score")]
         public float Price { get; set; }
     }
+    
     static void Main(string[] args)
     {
         MLContext mlContext = new MLContext();
